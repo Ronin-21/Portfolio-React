@@ -1,4 +1,5 @@
 import { Typography, styled } from '@mui/material';
+import { theme } from '../../../Theme/theme';
 
 const Title = ({ children }) => {
 	return (
@@ -8,7 +9,9 @@ const Title = ({ children }) => {
 	);
 };
 
-export const StyledTitle = styled(Typography)`
+export default Title;
+
+const StyledTitle = styled(Typography)`
 	margin-bottom: 4rem;
 	position: relative;
 	&::after {
@@ -19,8 +22,7 @@ export const StyledTitle = styled(Typography)`
 		width: 80%;
 		height: 3px;
 		border-radius: 2px;
-		/* background-color: #a7a7a71c; */
-		background-color: #10cbd140;
+		background-color: ${theme.palette.secondary.opacity};
 	}
 	&::before {
 		content: '';
@@ -29,11 +31,9 @@ export const StyledTitle = styled(Typography)`
 		left: 0;
 		width: 20%;
 		height: 12px;
-		background-color: #d11710;
+		background-color: ${theme.palette.primary.main};
 		border-radius: 2px;
 		clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
 		z-index: 1;
 	}
 `;
-
-export default Title;

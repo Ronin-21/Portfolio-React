@@ -1,7 +1,32 @@
-import { Box, Button, Stack, Typography, styled } from '@mui/material';
+import { Box, Stack, Typography, styled } from '@mui/material';
+import { theme } from '../../../Theme/theme';
 import bannerImg from '../../../assets/Banner.jpg';
+import MyButton from '../../Common/MyButton/MyButton';
+
+const Hero = () => {
+	return (
+		<StyledHero>
+			<Stack zIndex={999} alignItems='center'>
+				<Typography variant='subtitle2'>Hola soy</Typography>
+				<Typography
+					variant='subtitle1'
+					component='h1'
+					sx={{ textShadow: '0 0 15px #000000' }}>
+					Abel <span style={{ color: `${theme.palette.primary.main}` }}>Acuña</span>
+				</Typography>
+				<Typography variant='subtitle2'>Frontend Developer</Typography>
+				<MyButton variant='contained' href='#contacto' sx={{ mt: 3 }}>
+					Contáctame
+				</MyButton>
+			</Stack>
+		</StyledHero>
+	);
+};
+
+export default Hero;
 
 const StyledHero = styled(Box)`
+	position: relative;
 	background-size: cover;
 	background-image: url(${bannerImg});
 	background-position: center;
@@ -9,35 +34,13 @@ const StyledHero = styled(Box)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
 `;
-
-const Hero = () => {
-	return (
-		<StyledHero>
-			<Box
-				sx={{
-					position: 'absolute',
-					height: '100%',
-					width: '100%',
-					zIndex: 2,
-					bgcolor: 'rgba(0,0,0,0.4)',
-				}}
-			/>
-			<Stack zIndex={999} alignItems='center'>
-				<Typography variant='subtitle2'>Hola soy</Typography>
-				<Typography
-					variant='subtitle1'
-					component='h1'
-					sx={{ textShadow: '0 0 15px #000000' }}>
-					Abel <span style={{ color: '#d11710' }}>Acuña</span>
-				</Typography>
-				<Typography variant='subtitle2'>Frontend Developer</Typography>
-				<Button variant='contained' size='large' sx={{ mt: 3 }} href='#contacto'>
-					Contáctame
-				</Button>
-			</Stack>
-		</StyledHero>
-	);
-};
-
-export default Hero;

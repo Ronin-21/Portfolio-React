@@ -7,6 +7,7 @@ export const theme = createTheme({
 		},
 		secondary: {
 			main: '#10cad1',
+			opacity: 'rgba(16, 203, 209, 0.5)',
 		},
 		background: {
 			default: '#101010',

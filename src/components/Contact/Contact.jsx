@@ -1,6 +1,7 @@
 import {
 	Box,
 	Button,
+	Container,
 	Grid,
 	Paper,
 	TextField,
@@ -10,28 +11,14 @@ import {
 import contactImg from '../../assets/Contact.jpg';
 import { useForm } from '../../Hooks/useForm';
 import Title from '../Common/Title/Title';
-
-const StyledContact = styled(Box)`
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-`;
-
-const StyledInput = styled(TextField)`
-	.MuiFilledInput-input {
-		border-bottom: 2px solid #d11710;
-	}
-	& :hover {
-		border-color: red;
-	}
-	& label {
-		color: #10cbd199;
-	}
-`;
+import SectionContainer from '../Common/SectionContainer/SectionContainer.styled';
+import { theme } from '../../Theme/theme';
+import MyButton from '../Common/MyButton/MyButton';
+import Input from './Input';
+import MyInput from './Input';
 
 const Contact = () => {
+	// Hook useForm
 	const { name, email, message, onInputChange, onResetForm } = useForm({
 		name: '',
 		email: '',
@@ -40,76 +27,70 @@ const Contact = () => {
 
 	return (
 		<StyledContact id='contacto'>
-			<Paper
-				sx={{
-					position: 'absolute',
-					height: '40%',
-					width: '100%',
-					zIndex: 0,
-				}}
-			/>
-			<Title>Contacto</Title>
-			<Paper sx={{ p: 3, zIndex: 100, bgcolor: '#222' }} elevation={3}>
-				<form
-					action='https://formsubmit.co/abelalejandro.dev@gmail.com'
-					method='POST'>
-					<Grid container spacing={2}>
-						<Grid item xl={6}>
-							<StyledInput
-								fullWidth
-								color='secondary'
-								label='Ingresa tu nombre'
-								variant='filled'
-								name='name'
-								required
-								value={name}
-								onChange={onInputChange}
-								InputProps={{ disableUnderline: true }}
-							/>
+			<SectionContainer>
+				<Title>Contacto</Title>
+				<Paper sx={{ p: 3, zIndex: 100, bgcolor: '#222' }} elevation={3}>
+					<form
+						// action='https://formsubmit.co/abelalejandro.dev@gmail.com'
+						// method='POST'
+						onSubmit={() => alert('funciona')}>
+						<Grid container spacing={2}>
+							<Grid item xl={6}>
+								<MyInput
+									label='Ingresa tu nombre'
+									name='name'
+									value={name}
+									onChange={onInputChange}
+								/>
+							</Grid>
+							<Grid item xl={6}>
+								<MyInput
+									label='Ingresa tu correo'
+									type='email'
+									name='email'
+									value={email}
+									onChange={onInputChange}
+								/>
+							</Grid>
+							<Grid item xl={12}>
+								<MyInput
+									label='Déjame tus comentarios'
+									name='message'
+									multiline
+									rows={5}
+									value={message}
+									onChange={onInputChange}
+								/>
+							</Grid>
+							<Grid item xl={4}>
+								<MyButton type='submit' width='100%' variant='contained'>
+									Enviar mensaje
+								</MyButton>
+							</Grid>
 						</Grid>
-						<Grid item xl={6}>
-							<StyledInput
-								fullWidth
-								color='secondary'
-								label='Ingresa tu correo'
-								variant='filled'
-								name='email'
-								required
-								type='email'
-								value={email}
-								onChange={onInputChange}
-								InputProps={{ disableUnderline: true }}
-							/>
-						</Grid>
-						<Grid item xl={12}>
-							<StyledInput
-								fullWidth
-								color='secondary'
-								label='Déjame tus comentarios'
-								variant='filled'
-								name='message'
-								required
-								multiline
-								rows={5}
-								value={message}
-								onChange={onInputChange}
-								InputProps={{ disableUnderline: true }}
-							/>
-						</Grid>
-						<Grid item xl={4}>
-							<Button
-								type='submit'
-								variant='contained'
-								size='large'
-								sx={{ mt: 3, width: '100%' }}>
-								Enviar mensaje
-							</Button>
-						</Grid>
-					</Grid>
-				</form>
-			</Paper>
+					</form>
+				</Paper>
+			</SectionContainer>
 		</StyledContact>
 	);
 };
 
 export default Contact;
+
+const StyledContact = styled(Box)`
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: 40%;
+		width: 100%;
+		background-color: ${theme.palette.background.paper};
+		z-index: -10;
+	}
+`;

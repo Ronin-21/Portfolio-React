@@ -1,38 +1,12 @@
-import {
-	Button,
-	Container,
-	Grid,
-	Stack,
-	Typography,
-	styled,
-} from '@mui/material';
+import { Grid, Stack, Typography, styled } from '@mui/material';
 import profileImg from '../../assets/Perfil.webp';
+import MyButton from '../Common/MyButton/MyButton';
+import { SectionContainer } from '../Common/SectionContainer';
 import Title from '../Common/Title/Title';
-
-const GridImg = styled(Grid)`
-	position: relative;
-	& img {
-		width: 100%;
-		border-radius: 5px;
-		box-shadow: 0 0 15px 5px #000000c5;
-	}
-	&::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 25px;
-		height: 90%;
-		width: 90%;
-		background-color: #10cad1;
-		box-shadow: 0 0 20px 10px #10cbd148;
-		border-radius: 3px;
-		z-index: -1;
-	}
-`;
 
 const About = () => {
 	return (
-		<Container sx={{ pt: 12, pb: 12 }} id='sobre-mi'>
+		<SectionContainer id='sobre-mi'>
 			<Title>Sobre mi</Title>
 			<Grid container spacing={5}>
 				<GridImg item lg={5}>
@@ -56,14 +30,33 @@ const About = () => {
 							proyectos grupales en la plataforma No-Country. Mi sueño es poder entrar
 							en el Mercado IT y poder desarrollar todo mi potencial
 						</Typography>
-						<Button variant='outlined' size='large' sx={{ color: '#fbfbfb' }}>
-							Descargar CV
-						</Button>
+						<MyButton variant='outlined'>Descargar CV</MyButton>
 					</Stack>
 				</Grid>
 			</Grid>
-		</Container>
+		</SectionContainer>
 	);
 };
 
 export default About;
+
+const GridImg = styled(Grid)`
+	position: relative;
+	& img {
+		width: 100%;
+		border-radius: 5px;
+		box-shadow: 0 0 15px 5px #000000c5;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 25px;
+		height: 90%;
+		width: 90%;
+		background-color: #10cad1;
+		box-shadow: 0 0 20px 10px #10cbd148;
+		border-radius: 3px;
+		z-index: -1;
+	}
+`;

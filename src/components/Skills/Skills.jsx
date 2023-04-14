@@ -11,16 +11,15 @@ import {
 } from '@mui/material';
 import { TECH_SKILLS } from '../../Constants/skills';
 import Title from '../Common/Title/Title';
+import SectionContainer from '../Common/SectionContainer/SectionContainer.styled';
 
 const TabPanel = ({ children, value, index }) => {
 	return (
-		<div>
+		<>
 			{value === index && (
-				<Box sx={{ p: 3, bgcolor: '#222', minHeight: '550px' }}>
-					<Typography>{children}</Typography>
-				</Box>
+				<Box sx={{ p: 3, bgcolor: '#222', minHeight: '550px' }}>{children}</Box>
 			)}
-		</div>
+		</>
 	);
 };
 
@@ -57,8 +56,8 @@ const Skills = () => {
 	};
 
 	return (
-		<Paper sx={{ pt: 12, pb: 12 }} id='habilidades'>
-			<Container>
+		<Paper id='habilidades'>
+			<SectionContainer>
 				<Title>Habilidades</Title>
 				<Tabs value={value} onChange={handleChange}>
 					<Tab label='Tecnologías'></Tab>
@@ -88,7 +87,7 @@ const Skills = () => {
 				<TabPanel value={value} index={2}>
 					Item Three
 				</TabPanel>
-			</Container>
+			</SectionContainer>
 		</Paper>
 	);
 };
