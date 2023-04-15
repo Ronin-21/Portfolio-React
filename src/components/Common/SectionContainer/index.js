@@ -1,1 +1,1 @@
-export { default as SectionContainer } from './SectionContainer.styled.jsx';
+export { default as SectionContainer } from './SectionContainer.styled.js';

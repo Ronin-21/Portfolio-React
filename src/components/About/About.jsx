@@ -3,18 +3,19 @@ import profileImg from '../../assets/Perfil.webp';
 import MyButton from '../Common/MyButton/MyButton';
 import { SectionContainer } from '../Common/SectionContainer';
 import Title from '../Common/Title/Title';
+import { theme } from '../../Theme/theme';
 
 const About = () => {
 	return (
 		<SectionContainer id='sobre-mi'>
 			<Title>Sobre mi</Title>
 			<Grid container spacing={5}>
-				<GridImg item lg={5}>
+				<StyledGridProfile item lg={5}>
 					<img src={profileImg} alt='perfil' />
-				</GridImg>
+				</StyledGridProfile>
 				<Grid item lg={7}>
 					<Stack height='100%' alignItems='center' justifyContent='space-around'>
-						<Typography variant='subtitle2' fontWeight='bold' align='center'>
+						<Typography variant='subtitle1' component='h4' align='center'>
 							Abel Alejandro Acuña
 						</Typography>
 						<Typography variant='h5' color='secondary'>
@@ -28,7 +29,7 @@ const About = () => {
 							conocimientos en manejo de tecnologías Front-End, actualmente
 							profundizando en el uso de React JS con Next JS, y participando de
 							proyectos grupales en la plataforma No-Country. Mi sueño es poder entrar
-							en el Mercado IT y poder desarrollar todo mi potencial
+							en el Mercado IT y poder desarrollar todo mi potencial.
 						</Typography>
 						<MyButton variant='outlined'>Descargar CV</MyButton>
 					</Stack>
@@ -40,12 +41,12 @@ const About = () => {
 
 export default About;
 
-const GridImg = styled(Grid)`
+const StyledGridProfile = styled(Grid)`
 	position: relative;
 	& img {
 		width: 100%;
 		border-radius: 5px;
-		box-shadow: 0 0 15px 5px #000000c5;
+		box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
 	}
 	&::before {
 		content: '';
@@ -54,8 +55,8 @@ const GridImg = styled(Grid)`
 		left: 25px;
 		height: 90%;
 		width: 90%;
-		background-color: #10cad1;
-		box-shadow: 0 0 20px 10px #10cbd148;
+		background-color: ${theme.palette.secondary.main};
+		box-shadow: 0 0 20px 10px ${theme.palette.secondary.opacity};
 		border-radius: 3px;
 		z-index: -1;
 	}

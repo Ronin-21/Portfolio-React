@@ -7,17 +7,18 @@ export const theme = createTheme({
 		},
 		secondary: {
 			main: '#10cad1',
-			opacity: 'rgba(16, 203, 209, 0.5)',
+			opacity: 'rgba(16, 203, 209, 0.3)',
 		},
 		background: {
 			default: '#101010',
 			paper: '#191919',
+			light: '#222',
 		},
 		text: {
 			primary: '#fbfbfb',
 			secondary: '#a7a7a7',
-			hint: '#101010',
 		},
+		divider: '#2e2e2e',
 	},
 	typography: {
 		fontSize: 16,
@@ -31,12 +32,12 @@ export const theme = createTheme({
 			fontSize: '5rem',
 			fontWeight: 700,
 		},
-		subtitle1: {
+		hero_title: {
 			fontFamily: 'Josefin Sans',
 			fontSize: '8rem',
 			fontWeight: 700,
 		},
-		subtitle2: {
+		subtitle1: {
 			fontFamily: 'Rubik',
 			fontSize: '3rem',
 			fontWeight: 500,

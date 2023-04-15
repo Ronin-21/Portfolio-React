@@ -1,20 +1,24 @@
 import { Box, Stack, Typography, styled } from '@mui/material';
-import { theme } from '../../../Theme/theme';
 import bannerImg from '../../../assets/Banner.jpg';
 import MyButton from '../../Common/MyButton/MyButton';
+import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
 
 const Hero = () => {
 	return (
 		<StyledHero>
 			<Stack zIndex={999} alignItems='center'>
-				<Typography variant='subtitle2'>Hola soy</Typography>
+				<Typography variant='subtitle1' component='h3'>
+					Hola soy
+				</Typography>
 				<Typography
-					variant='subtitle1'
+					variant='hero_title'
 					component='h1'
 					sx={{ textShadow: '0 0 15px #000000' }}>
-					Abel <span style={{ color: `${theme.palette.primary.main}` }}>Acuña</span>
+					Abel <StyledSpan>Acuña</StyledSpan>
 				</Typography>
-				<Typography variant='subtitle2'>Frontend Developer</Typography>
+				<Typography variant='subtitle1' component='h3'>
+					Frontend Developer
+				</Typography>
 				<MyButton variant='contained' href='#contacto' sx={{ mt: 3 }}>
 					Contáctame
 				</MyButton>

@@ -1,8 +1,8 @@
+import Projects from './Components/Proyects/Proyects';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Proyects from './components/Proyects/Proyects';
 import Skills from './components/Skills/Skills';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 			<Header />
 			<About />
 			<Skills />
-			<Proyects />
+			<Projects />
 			<Contact />
 			<Footer />
 		</>

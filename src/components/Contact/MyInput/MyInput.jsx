@@ -1,5 +1,5 @@
 import { TextField, styled } from '@mui/material';
-import { theme } from '../../Theme/theme';
+import { theme } from '../../../Theme/theme';
 
 const MyInput = ({ ...props }) => {
 	return (
