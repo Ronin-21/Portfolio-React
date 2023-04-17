@@ -5,7 +5,7 @@ import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
 
 const Hero = () => {
 	return (
-		<StyledHero>
+		<StyledHero id='hero'>
 			<Stack zIndex={999} alignItems='center'>
 				<Typography variant='subtitle1' component='h3'>
 					Hola soy

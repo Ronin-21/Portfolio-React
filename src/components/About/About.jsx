@@ -1,5 +1,5 @@
 import { Grid, Stack, Typography, styled } from '@mui/material';
-import profileImg from '../../assets/Perfil.webp';
+import profileImg from '../../Assets/Perfil.webp';
 import MyButton from '../Common/MyButton/MyButton';
 import { SectionContainer } from '../Common/SectionContainer';
 import Title from '../Common/Title/Title';

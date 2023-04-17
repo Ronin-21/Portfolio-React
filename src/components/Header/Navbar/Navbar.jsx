@@ -14,10 +14,10 @@ import { useState } from 'react';
 import { navLinks } from '../../../Constants/navlinks';
 import { theme } from '../../../Theme/theme';
 import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
+import { Link as scrollLink } from 'react-scroll';
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
-	const [active, setActive] = useState(0);
 
 	return (
 		<>
@@ -35,14 +35,13 @@ const Navbar = () => {
 							alignItems='center'
 							spacing={3}
 							sx={{ display: { xs: 'none', sm: 'flex' } }}>
-							{navLinks.map((item, index) => (
+							{navLinks.map((item) => (
 								<StyledLink
 									key={item.title}
-									href={item.path}
-									color='inherit'
-									underline='none'
-									onClick={() => setActive(index)}
-									className={`${active == index && 'active'}`}>
+									to={item.path}
+									spy={true}
+									smooth={true}
+									duration={50}>
 									{item.title}
 								</StyledLink>
 							))}
@@ -86,27 +85,35 @@ const Navbar = () => {
 
 export default Navbar;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(scrollLink)`
 	position: relative;
+	cursor: pointer;
 	transition: all 0.2s ease-in;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		width: 0;
+		height: 3px;
+		background-color: ${theme.palette.secondary.main};
+		transition: width 0.5s ease;
+	}
 
 	&:hover {
 		color: ${theme.palette.secondary.dark};
+		font-size: 1.3rem;
 		font-weight: 700;
 	}
 
 	&.active {
 		color: ${theme.palette.secondary.main};
+		font-size: 1.3rem;
 		font-weight: 700;
 
 		&::before {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
 			width: 100%;
-			height: 2px;
-			background-color: ${theme.palette.secondary.main};
 		}
 	}
 `;

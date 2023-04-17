@@ -13,8 +13,11 @@ import rrouterLogo from '../assets/svg/react-router.svg';
 import rqueryLogo from '../assets/svg/react-query-icon.svg';
 import expoLogo from '../assets/svg/expo-icon.svg';
 import rnativeLogo from '../assets/svg/react-native.svg';
+import githubLogo from '../assets/svg/Github-Logo.svg';
+import corelLogo from '../assets/svg/CorelDraw-Logo.svg';
 import illustratorLogo from '../assets/svg/Illustrator-Logo.svg';
 import photoshopLogo from '../assets/svg/Photoshop-logo.svg';
+import figmaLogo from '../assets/svg/figma.svg';
 
 export const TECH_SKILLS = [
 	{
@@ -43,6 +46,39 @@ export const TECH_SKILLS = [
 		description: 'Git',
 	},
 	{
+		img: githubLogo,
+		alt: 'github',
+		description: 'Github',
+	},
+	{
+		img: expoLogo,
+		alt: 'expo',
+		description: 'Expo',
+	},
+	{
+		img: rnativeLogo,
+		alt: 'react native',
+		description: 'React Native',
+	},
+];
+
+export const FRAMEWORKS = [
+	{
+		img: reduxLogo,
+		alt: 'redux',
+		description: 'Redux Toolkit',
+	},
+	{
+		img: rqueryLogo,
+		alt: 'react query',
+		description: 'React Query',
+	},
+	{
+		img: rrouterLogo,
+		alt: 'react router',
+		description: 'React Router V6',
+	},
+	{
 		img: materialLogo,
 		alt: 'material ui',
 		description: 'Material UI',
@@ -51,11 +87,6 @@ export const TECH_SKILLS = [
 		img: styledLogo,
 		alt: 'styled components',
 		description: 'Styled Components',
-	},
-	{
-		img: reduxLogo,
-		alt: 'redux',
-		description: 'Redux Toolkit',
 	},
 	{
 		img: sassLogo,
@@ -72,25 +103,18 @@ export const TECH_SKILLS = [
 		alt: 'bootstrap',
 		description: 'Bootstrap',
 	},
+];
+
+export const DESIGN = [
 	{
-		img: rrouterLogo,
-		alt: 'react router',
-		description: 'React Router V6',
+		img: figmaLogo,
+		alt: 'figma',
+		description: 'Figma',
 	},
 	{
-		img: rqueryLogo,
-		alt: 'react query',
-		description: 'React Query',
-	},
-	{
-		img: expoLogo,
-		alt: 'expo',
-		description: 'Expo',
-	},
-	{
-		img: rnativeLogo,
-		alt: 'react native',
-		description: 'React Native',
+		img: corelLogo,
+		alt: 'corel draw',
+		description: 'Corel Draw',
 	},
 	{
 		img: illustratorLogo,

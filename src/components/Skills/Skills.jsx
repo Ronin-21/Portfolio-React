@@ -1,6 +1,6 @@
 import { Box, Tab, Tabs } from '@mui/material';
 import { useState } from 'react';
-import { TECH_SKILLS } from '../../Constants/skills';
+import { DESIGN, FRAMEWORKS, TECH_SKILLS } from '../../Constants/skills';
 import SectionContainer from '../Common/SectionContainer/SectionContainer.styled';
 import Title from '../Common/Title/Title';
 import TabContent from './TabContent/TabContent';
@@ -18,18 +18,18 @@ const Skills = () => {
 			<SectionContainer>
 				<Title>Habilidades</Title>
 				<Tabs value={value} onChange={handleChange}>
-					<Tab label='Tecnologías'></Tab>
-					<Tab label='Habilidades Blandas'></Tab>
-					<Tab label='Hobbies'></Tab>
+					<Tab label='Tecnologías Principales'></Tab>
+					<Tab label='Tecnologías Complementarias'></Tab>
+					<Tab label='Diseño Gráfico'></Tab>
 				</Tabs>
 				<TabPanel value={value} index={0}>
 					<TabContent data={TECH_SKILLS} />
 				</TabPanel>
 				<TabPanel value={value} index={1}>
-					Item Two
+					<TabContent data={FRAMEWORKS} />
 				</TabPanel>
 				<TabPanel value={value} index={2}>
-					Item Three
+					<TabContent data={DESIGN} />
 				</TabPanel>
 			</SectionContainer>
 		</Box>
