@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { theme } from './Theme/theme';
 import './index.css';
-import Spinner from './Components/Common/Spinner/Spinner';
+import Spinner from './components/Common/Spinner/Spinner';
 
 const LazyApp = lazy(() => import('./App'));
 
