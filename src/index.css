@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Split On';
-	src: local('Split On'), url('./assets/font/SplitOn.ttf');
+	src: local('Split On'), url('./Assets/font/SplitOn.ttf');
 }
 
 html {

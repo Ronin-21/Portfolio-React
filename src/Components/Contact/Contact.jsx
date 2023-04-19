@@ -1,4 +1,4 @@
-import { Box, Grid, styled } from '@mui/material';
+import { Box, Grid, Typography, styled } from '@mui/material';
 import { useState } from 'react';
 import { useForm } from '../../Hooks/useForm';
 import { theme } from '../../Theme/theme';
@@ -9,6 +9,8 @@ import { Title } from '../Common/Title';
 import ContactForm from './ContactForm/ContactForm';
 import { ContactModal } from './ContactModal';
 import MyInput from './MyInput/MyInput';
+import ReactWhatsapp from 'react-whatsapp';
+import { StyledSpan } from '../Common/StyledSpan';
 
 const Contact = () => {
 	// Handle modal of success
@@ -68,6 +70,16 @@ const Contact = () => {
 
 			<SectionContainer>
 				<Title>Contacto</Title>
+				<Typography align='center' variant='h5' paddingBottom={3}>
+					Envíame un correo o contáctame por{' '}
+					<ReactWhatsapp
+						number='+549 3858480489'
+						message='Hello World!!!'
+						element={StyledSpan}
+						style={{ cursor: 'pointer' }}>
+						Whatsapp
+					</ReactWhatsapp>
+				</Typography>
 				<ContactForm onSubmit={onSubmit}>
 					<Grid container spacing={2}>
 						<Grid item xl={6}>
