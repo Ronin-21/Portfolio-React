@@ -1,9 +1,9 @@
 import Projects from './Components/Proyects/Proyects';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Skills from './components/Skills/Skills';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Skills from './Components/Skills/Skills';
 
 function App() {
 	return (

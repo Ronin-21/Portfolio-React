@@ -1,8 +1,8 @@
 import { Language, GitHub } from '@mui/icons-material';
-import project1 from '../assets/TechLearn.png';
-import project2 from '../assets/Ecommerce1.webp';
-import project3 from '../assets/Encriptador1.webp';
-import project4 from '../assets/Juego-ahorcado1.webp';
+import project1 from '../Assets/TechLearn.png';
+import project2 from '../Assets/Ecommerce1.webp';
+import project3 from '../Assets/Encriptador1.webp';
+import project4 from '../Assets/Juego-ahorcado1.webp';
 
 export const PROYECTS_DATA = [
 	{
@@ -14,10 +14,12 @@ export const PROYECTS_DATA = [
 		tags: ['React js', 'Tailwindcss', 'Redux Toolkit', 'RTK Query', 'Java'],
 		links: [
 			{
+				title: 'Github',
 				icon: GitHub,
 				href: 'https://github.com/Ronin-21/TechnoLearn-C9-27-T-JavaReact',
 			},
 			{
+				title: 'Ver Demo',
 				icon: Language,
 				href:
 					'https://techno-learn-c9-27-t-java-react-mvci-n09o77qyh-technolearn.vercel.app/',
@@ -33,10 +35,12 @@ export const PROYECTS_DATA = [
 		tags: ['HTML 5', 'CSS 3', 'JavaScript', 'Bootstrap', 'Sass'],
 		links: [
 			{
+				title: 'Github',
 				icon: GitHub,
 				href: 'https://github.com/Ronin-21/Ronin-21-Proyecto-Alura---E-commerce',
 			},
 			{
+				title: 'Ver Demo',
 				icon: Language,
 				href: 'https://ronin-21.github.io/Ronin-21-Proyecto-Alura---E-commerce/',
 			},
@@ -51,10 +55,12 @@ export const PROYECTS_DATA = [
 		tags: ['HTML 5', 'CSS 3', 'JavaScript'],
 		links: [
 			{
+				title: 'Github',
 				icon: GitHub,
 				href: 'https://github.com/Ronin-21/Proyecto-Alura---Encriptador',
 			},
 			{
+				title: 'Ver Demo',
 				icon: Language,
 				href: 'https://ronin-21.github.io/Proyecto-Alura---Encriptador/',
 			},
@@ -69,10 +75,12 @@ export const PROYECTS_DATA = [
 		tags: ['HTML 5', 'CSS 3', 'JavaScript'],
 		links: [
 			{
+				title: 'Github',
 				icon: GitHub,
 				href: 'https://github.com/Ronin-21/Proyecto-Alura---Juego-Ahorcado',
 			},
 			{
+				title: 'Ver Demo',
 				icon: Language,
 				href: 'https://ronin-21.github.io/Proyecto-Alura---Juego-Ahorcado/',
 			},
