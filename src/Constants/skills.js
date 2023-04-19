@@ -16,7 +16,7 @@ import rnativeLogo from '../Assets/svg/react-native.svg';
 import githubLogo from '../Assets/svg/Github-Logo.svg';
 import corelLogo from '../Assets/svg/CorelDraw-Logo.svg';
 import illustratorLogo from '../Assets/svg/Illustrator-Logo.svg';
-import photoshopLogo from '../Assets/svg/Photoshop-logo.svg';
+import photoshopLogo from '../Assets/svg/Photoshop-Logo.svg';
 import figmaLogo from '../Assets/svg/figma.svg';
 
 export const TECH_SKILLS = [
