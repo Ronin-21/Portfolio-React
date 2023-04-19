@@ -1,5 +1,5 @@
 import { Box, Stack, Typography, styled } from '@mui/material';
-import bannerImg from '../../../assets/Banner.jpg';
+import bannerImg from '../../../Assets/Banner.jpg';
 import { MyButton } from '../../Common/MyButton';
 import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
 
