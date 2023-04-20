@@ -16,7 +16,7 @@ const ContactModal = ({ msj, open, handleClose }) => {
 			<Typography variant='h5' align='center' fontWeight='bold'>
 				Gracias por comunicarse, en breve recibirá una respuesta!
 			</Typography>
-			<Divider light='true' />
+			<Divider light={true} />
 			<DialogContent>
 				<DialogContentText>{msj}</DialogContentText>
 			</DialogContent>

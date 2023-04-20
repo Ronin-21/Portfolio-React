@@ -26,24 +26,39 @@ export const theme = createTheme({
 		logo: {
 			fontFamily: 'Split On',
 			fontSize: '3rem',
+			'@media (max-width:600px)': {
+				fontSize: '1.5rem',
+			},
 		},
 		title: {
 			fontFamily: 'Josefin Sans',
 			fontSize: '5rem',
 			fontWeight: 700,
+			'@media (max-width:600px)': {
+				fontSize: '3rem',
+			},
 		},
 		hero_title: {
 			fontFamily: 'Josefin Sans',
 			fontSize: '8rem',
 			fontWeight: 700,
+			'@media (max-width:600px)': {
+				fontSize: '4rem',
+			},
 		},
 		subtitle1: {
 			fontFamily: 'Rubik',
 			fontSize: '3rem',
 			fontWeight: 500,
+			'@media (max-width:600px)': {
+				fontSize: '2rem',
+			},
 		},
 		body1: {
 			fontSize: '1.2rem',
+			'@media (max-width:600px)': {
+				fontSize: '0.9rem',
+			},
 		},
 	},
 });

@@ -17,7 +17,12 @@ const Skills = () => {
 		<Box sx={{ bgcolor: 'background.paper' }} id='habilidades'>
 			<SectionContainer>
 				<Title>Habilidades</Title>
-				<Tabs value={value} onChange={handleChange}>
+				<Tabs
+					value={value}
+					onChange={handleChange}
+					variant='scrollable'
+					scrollButtons
+					allowScrollButtonsMobile>
 					<Tab label='Tecnologías Principales'></Tab>
 					<Tab label='Tecnologías Complementarias'></Tab>
 					<Tab label='Diseño Gráfico'></Tab>

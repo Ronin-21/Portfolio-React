@@ -1,8 +1,10 @@
 import {
+	Box,
 	Card,
 	CardActions,
 	CardContent,
 	CardMedia,
+	Container,
 	Grid,
 	IconButton,
 	Typography,
@@ -24,23 +26,29 @@ const ProjectCard = ({ title, description, imageUrl, tags, links }) => {
 				<Card
 					sx={{
 						display: 'flex',
+						flexDirection: { xs: 'column', md: 'row' },
 						p: 3,
 					}}
 					elevation={6}>
-					<div>
+					<Box>
 						<CardContent>
 							<Typography
 								variant='subtitle1'
 								component='h4'
 								color='secondary'
-								sx={{ mb: 2 }}>
+								sx={{ mb: 2, textAlign: { xs: 'center', md: 'start' } }}>
 								{title}
 							</Typography>
 							<Typography color='text.secondary' paragraph>
 								{description}
 							</Typography>
 						</CardContent>
-						<CardActions>
+						<CardActions
+							sx={{
+								flexWrap: 'wrap',
+								justifyContent: { xs: 'center', md: 'start' },
+								gap: '10px',
+							}}>
 							<div>
 								{links.map((linkItem) => (
 									<IconButton
@@ -54,13 +62,13 @@ const ProjectCard = ({ title, description, imageUrl, tags, links }) => {
 							</div>
 							<TagsContainer tags={tags} />
 						</CardActions>
-					</div>
+					</Box>
 					<CardMedia
 						onClick={handleOpen}
 						image={imageUrl}
 						component='img'
 						sx={{
-							width: '40%',
+							width: { sx: '90%', md: '40%' },
 							aspectRatio: '16/9',
 							objectFit: 'contain',
 							cursor: 'pointer',

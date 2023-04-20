@@ -1,4 +1,4 @@
-import { Dialog, Divider, Typography, styled } from '@mui/material';
+import { Dialog, Typography, styled } from '@mui/material';
 import { theme } from '../../../Theme/theme';
 import { MyButton } from '../../Common/MyButton';
 
@@ -8,7 +8,6 @@ function ProjectModal({ open, handleOpen, image, title, links }) {
 			<Typography variant='subtitle1' component='h5' align='center'>
 				{title}
 			</Typography>
-			<Divider light='true' />
 			<img src={image} alt='' />
 			<div className='links-container'>
 				{links.map((linkItem) => (
@@ -30,7 +29,7 @@ const StyledProjectModal = styled(Dialog)`
 
 	.MuiDialog-paper {
 		max-width: 1000px;
-		padding: 2rem;
+		padding: clamp(1rem, 0.5rem, 2rem);
 		color: ${theme.palette.background.paper};
 		background-color: ${theme.palette.text.primary};
 	}

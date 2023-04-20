@@ -82,7 +82,7 @@ const Contact = () => {
 				</Typography>
 				<ContactForm onSubmit={onSubmit}>
 					<Grid container spacing={2}>
-						<Grid item xl={6}>
+						<Grid item xs={12} sm={6}>
 							<MyInput
 								label='Ingresa tu nombre'
 								name='name'
@@ -90,7 +90,7 @@ const Contact = () => {
 								onChange={onInputChange}
 							/>
 						</Grid>
-						<Grid item xl={6}>
+						<Grid item xs={12} sm={6}>
 							<MyInput
 								label='Ingresa tu correo'
 								type='email'
@@ -99,7 +99,7 @@ const Contact = () => {
 								onChange={onInputChange}
 							/>
 						</Grid>
-						<Grid item xl={12}>
+						<Grid item xs={12} sm={12}>
 							<MyInput
 								label='Déjame tus comentarios'
 								name='message'
@@ -109,7 +109,7 @@ const Contact = () => {
 								onChange={onInputChange}
 							/>
 						</Grid>
-						<Grid item xl={4}>
+						<Grid item xs={12} sm={6} md={4}>
 							<MyButton type='submit' width='100%' variant='contained'>
 								Enviar mensaje
 							</MyButton>

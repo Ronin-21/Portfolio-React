@@ -34,7 +34,7 @@ const Navbar = () => {
 							justifyContent='center'
 							alignItems='center'
 							spacing={3}
-							sx={{ display: { xs: 'none', sm: 'flex' } }}>
+							sx={{ display: { xs: 'none', md: 'flex' } }}>
 							{navLinks.map((item) => (
 								<StyledLink
 									key={item.title}
@@ -51,7 +51,7 @@ const Navbar = () => {
 							aria-label='menu'
 							size='large'
 							onClick={() => setOpen(!open)}
-							sx={{ display: { xs: 'flex', sm: 'none' } }}>
+							sx={{ display: { xs: 'flex', md: 'none' } }}>
 							<MenuIcon fontSize='large' />
 						</IconButton>
 					</Toolbar>
@@ -61,21 +61,22 @@ const Navbar = () => {
 				anchor='right'
 				open={open}
 				onClose={() => setOpen(false)}
-				sx={{ display: { xs: 'flex', sm: 'none' } }}>
+				sx={{ display: { xs: 'flex', md: 'none' } }}>
 				<Stack
 					justifyContent='center'
 					alignItems='center'
 					spacing={5}
 					sx={{ height: '100%', width: '100vw' }}>
 					{navLinks.map((item) => (
-						<Link
+						<StyledLink
 							key={item.title}
-							href={item.path}
-							color='inherit'
-							underline='none'
+							to={item.path}
+							spy={true}
+							smooth={true}
+							duration={50}
 							onClick={() => setOpen(!open)}>
 							{item.title}
-						</Link>
+						</StyledLink>
 					))}
 				</Stack>
 			</Drawer>

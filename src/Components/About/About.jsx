@@ -18,7 +18,7 @@ const About = () => {
 						<Typography variant='subtitle1' component='h4' align='center'>
 							Abel Alejandro Acuña
 						</Typography>
-						<Typography variant='h5' color='secondary'>
+						<Typography variant='h5' color='secondary' align='center'>
 							Desarrollador Front-End
 						</Typography>
 						<Typography align='center' color='text.secondary' paragraph>

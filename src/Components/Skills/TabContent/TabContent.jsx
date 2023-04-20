@@ -23,8 +23,8 @@ const TabContent = ({ data }) => {
 export default TabContent;
 
 const StyledSvg = styled(Paper)`
-	height: 230px;
-	width: 170px;
+	height: clamp(150px, 170px, 230px);
+	width: clamp(100px, 115px, 170px);
 	padding: 0.7em;
 	display: flex;
 	flex-direction: column;
