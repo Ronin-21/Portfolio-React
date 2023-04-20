@@ -60,5 +60,10 @@ export const theme = createTheme({
 				fontSize: '0.9rem',
 			},
 		},
+		h5: {
+			'@media (max-width:600px)': {
+				fontSize: '1.5rem',
+			},
+		},
 	},
 });

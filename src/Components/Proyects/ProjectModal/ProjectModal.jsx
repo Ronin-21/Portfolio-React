@@ -5,7 +5,11 @@ import { MyButton } from '../../Common/MyButton';
 function ProjectModal({ open, handleOpen, image, title, links }) {
 	return (
 		<StyledProjectModal open={open} onClose={handleOpen} maxWidth={false}>
-			<Typography variant='subtitle1' component='h5' align='center'>
+			<Typography
+				variant='subtitle1'
+				component='h5'
+				align='center'
+				fontWeight='bold'>
 				{title}
 			</Typography>
 			<img src={image} alt='' />
@@ -15,7 +19,8 @@ function ProjectModal({ open, handleOpen, image, title, links }) {
 						href={linkItem.href}
 						key={linkItem.title}
 						target='_blank'
-						variant='contained'>
+						variant='contained'
+						sx={{ minWidth: '130px' }}>
 						{linkItem.title}
 					</MyButton>
 				))}

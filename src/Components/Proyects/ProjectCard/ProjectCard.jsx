@@ -8,6 +8,7 @@ import {
 	Grid,
 	IconButton,
 	Typography,
+	styled,
 } from '@mui/material';
 import TagsContainer from '../TagsContainer/TagsContainer';
 import { useState } from 'react';
@@ -51,13 +52,13 @@ const ProjectCard = ({ title, description, imageUrl, tags, links }) => {
 							}}>
 							<div>
 								{links.map((linkItem) => (
-									<IconButton
+									<StyledIcon
 										href={linkItem.href}
 										key={linkItem.href}
 										color='inherit'
 										target='_blank'>
 										<linkItem.icon />
-									</IconButton>
+									</StyledIcon>
 								))}
 							</div>
 							<TagsContainer tags={tags} />
@@ -68,7 +69,7 @@ const ProjectCard = ({ title, description, imageUrl, tags, links }) => {
 						image={imageUrl}
 						component='img'
 						sx={{
-							width: { sx: '90%', md: '40%' },
+							width: { xs: '100%', md: '40%' },
 							aspectRatio: '16/9',
 							objectFit: 'contain',
 							cursor: 'pointer',
@@ -87,3 +88,9 @@ const ProjectCard = ({ title, description, imageUrl, tags, links }) => {
 };
 
 export default ProjectCard;
+
+const StyledIcon = styled(IconButton)`
+	& svg {
+		font-size: 2.3rem;
+	}
+`;
