@@ -4,17 +4,16 @@ import {
 	Container,
 	Drawer,
 	IconButton,
-	Link,
 	Stack,
 	Toolbar,
 	Typography,
 	styled,
 } from '@mui/material';
 import { useState } from 'react';
+import { Link as scrollLink } from 'react-scroll';
 import { navLinks } from '../../../Constants/navlinks';
 import { theme } from '../../../Theme/theme';
 import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
-import { Link as scrollLink } from 'react-scroll';
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);

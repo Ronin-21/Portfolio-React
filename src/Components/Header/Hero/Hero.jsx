@@ -1,23 +1,27 @@
 import { Box, Stack, Typography, styled } from '@mui/material';
-import bannerImg from '../../../Assets/Banner.jpg';
+import { Slide, Zoom } from 'react-awesome-reveal';
+import bannerImg from '../../../Assets/img/Banner.jpg';
 import { MyButton } from '../../Common/MyButton';
 import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
-import { Zoom, Fade, Slide } from 'react-awesome-reveal';
 
 const Hero = () => {
 	return (
 		<StyledHero id='hero'>
 			<Stack zIndex={999} alignItems='center'>
-				<Slide direction='down'>
+				<Slide direction='right'>
 					<Typography variant='subtitle1' component='h3'>
 						Hola soy
 					</Typography>
+				</Slide>
+				<Zoom>
 					<Typography
 						variant='hero_title'
 						component='h1'
 						sx={{ textShadow: '0 0 15px #000000' }}>
 						Abel <StyledSpan>Acuña</StyledSpan>
 					</Typography>
+				</Zoom>
+				<Slide direction='left'>
 					<Typography variant='subtitle1' component='h3'>
 						Frontend Developer
 					</Typography>

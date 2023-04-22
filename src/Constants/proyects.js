@@ -1,8 +1,8 @@
 import { Language, GitHub } from '@mui/icons-material';
-import project1 from '../Assets/TechLearn.png';
-import project2 from '../Assets/Ecommerce1.webp';
-import project3 from '../Assets/Encriptador1.webp';
-import project4 from '../Assets/Juego-ahorcado1.webp';
+import project1 from '../Assets/img/TechLearn.png';
+import project2 from '../Assets/img/Ecommerce1.webp';
+import project3 from '../Assets/img/Encriptador1.webp';
+import project4 from '../Assets/img/Juego-ahorcado1.webp';
 
 export const PROYECTS_DATA = [
 	{
@@ -21,10 +21,10 @@ export const PROYECTS_DATA = [
 			{
 				title: 'Ver Demo',
 				icon: Language,
-				href:
-					'https://techno-learn-c9-27-t-java-react-mvci-n09o77qyh-technolearn.vercel.app/',
+				href: 'https://www.youtube.com/watch?v=4RHPMM4r72E',
 			},
 		],
+		direction: 'left',
 	},
 	{
 		title: 'Alura E-commerce',
@@ -45,6 +45,7 @@ export const PROYECTS_DATA = [
 				href: 'https://ronin-21.github.io/Ronin-21-Proyecto-Alura---E-commerce/',
 			},
 		],
+		direction: 'right',
 	},
 	{
 		title: 'Encriptador De Texto',
@@ -65,6 +66,7 @@ export const PROYECTS_DATA = [
 				href: 'https://ronin-21.github.io/Proyecto-Alura---Encriptador/',
 			},
 		],
+		direction: 'left',
 	},
 	{
 		title: 'Juego del Ahorcado',
@@ -85,5 +87,6 @@ export const PROYECTS_DATA = [
 				href: 'https://ronin-21.github.io/Proyecto-Alura---Juego-Ahorcado/',
 			},
 		],
+		direction: 'right',
 	},
 ];

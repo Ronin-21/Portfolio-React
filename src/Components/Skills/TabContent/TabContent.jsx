@@ -1,4 +1,7 @@
 import { Paper, Stack, Typography, styled } from '@mui/material';
+import { theme } from '../../../Theme/theme';
+
+const breakpoint = theme.breakpoints.up('md');
 
 const TabContent = ({ data }) => {
 	return (
@@ -23,8 +26,8 @@ const TabContent = ({ data }) => {
 export default TabContent;
 
 const StyledSvg = styled(Paper)`
-	height: clamp(150px, 170px, 230px);
-	width: clamp(100px, 115px, 170px);
+	height: 230px;
+	width: 170px;
 	padding: 0.7em;
 	display: flex;
 	flex-direction: column;
@@ -36,7 +39,7 @@ const StyledSvg = styled(Paper)`
 		aspect-ratio: 1/1;
 		width: 100%;
 		object-fit: contain;
-		/* filter: grayscale(100); */
+		filter: grayscale(100);
 		transition: all 0.2s ease-in;
 	}
 	&:hover {
@@ -44,5 +47,10 @@ const StyledSvg = styled(Paper)`
 		& img {
 			filter: grayscale(0);
 		}
+	}
+
+	@media (max-width: 600px) {
+		height: 170px;
+		width: 120px;
 	}
 `;

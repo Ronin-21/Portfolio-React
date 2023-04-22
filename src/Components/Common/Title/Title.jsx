@@ -1,11 +1,14 @@
 import { Typography, styled } from '@mui/material';
 import { theme } from '../../../Theme/theme';
+import { Fade } from 'react-awesome-reveal';
 
 const Title = ({ children }) => {
 	return (
-		<StyledTitle variant='title' component='h2'>
-			{children}
-		</StyledTitle>
+		<Fade direction='down' triggerOnce>
+			<StyledTitle variant='title' component='h2'>
+				{children}
+			</StyledTitle>
+		</Fade>
 	);
 };
 

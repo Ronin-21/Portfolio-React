@@ -1,5 +1,5 @@
 import { Grid, Stack, Typography, styled } from '@mui/material';
-import profileImg from '../../Assets/Perfil.webp';
+import profileImg from '../../Assets/img/Perfil.webp';
 import { MyButton } from '../Common/MyButton';
 import { SectionContainer } from '../Common/SectionContainer';
 import { Title } from '../Common/Title';
@@ -31,7 +31,9 @@ const About = () => {
 							proyectos grupales en la plataforma No-Country. Mi sueño es poder entrar
 							en el Mercado IT y poder desarrollar todo mi potencial.
 						</Typography>
-						<MyButton variant='outlined'>Descargar CV</MyButton>
+						<MyButton variant='outlined' href='../Assets/Abel_Acuña-CV.pdf' download>
+							Descargar CV
+						</MyButton>
 					</Stack>
 				</Grid>
 			</Grid>
@@ -43,8 +45,10 @@ export default About;
 
 const StyledGridProfile = styled(Grid)`
 	position: relative;
+	margin: auto;
 	& img {
 		width: 100%;
+		max-width: 500px;
 		border-radius: 5px;
 		box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
 	}
