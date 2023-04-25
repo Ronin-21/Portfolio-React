@@ -31,7 +31,7 @@ const About = () => {
 							proyectos grupales en la plataforma No-Country. Mi sueño es poder entrar
 							en el Mercado IT y poder desarrollar todo mi potencial.
 						</Typography>
-						<MyButton variant='outlined' href='../Assets/Abel_Acuña-CV.pdf' download>
+						<MyButton variant='outlined' href='./assets/Abel_Acuña-CV.pdf' download>
 							Descargar CV
 						</MyButton>
 					</Stack>
