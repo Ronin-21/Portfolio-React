@@ -4,6 +4,7 @@ import { MyButton } from '../Common/MyButton';
 import { SectionContainer } from '../Common/SectionContainer';
 import { Title } from '../Common/Title';
 import { theme } from '../../Theme/theme';
+import CV from '../../Assets/Abel_Acuña-CV.pdf';
 
 const About = () => {
 	return (
@@ -31,7 +32,7 @@ const About = () => {
 							proyectos grupales en la plataforma No-Country. Mi sueño es poder entrar
 							en el Mercado IT y poder desarrollar todo mi potencial.
 						</Typography>
-						<MyButton variant='outlined' href='./assets/Abel_Acuña-CV-c05d7c06.pdf' download>
+						<MyButton variant='outlined' href={CV} download>
 							Descargar CV
 						</MyButton>
 					</Stack>
