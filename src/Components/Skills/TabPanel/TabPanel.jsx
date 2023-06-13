@@ -11,4 +11,8 @@ const StyledPanel = styled(Box)`
 	min-height: 550px;
 	padding: ${theme.spacing(3)};
 	background-color: ${theme.palette.background.light};
+
+	@media (max-width: 600px) {
+		padding: ${theme.spacing(2)};
+	}
 `;

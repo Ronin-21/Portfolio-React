@@ -1,8 +1,9 @@
 import { Language, GitHub } from '@mui/icons-material';
 import project1 from '../Assets/img/TechLearn.png';
 import project2 from '../Assets/img/Ecommerce1.webp';
-import project3 from '../Assets/img/Encriptador1.webp';
+// import project3 from '../Assets/img/Encriptador1.webp';
 import project4 from '../Assets/img/Juego-ahorcado1.webp';
+import project3 from '../Assets/img/MyService.png';
 
 export const PROYECTS_DATA = [
 	{
@@ -48,22 +49,22 @@ export const PROYECTS_DATA = [
 		direction: 'right',
 	},
 	{
-		title: 'Encriptador De Texto',
+		title: 'My Service',
 		description:
-			'Proyecto de un encriptador de texto, posee la funcion de encriptado y desencriptado siguiendo un parámetro ya fijado. También tiene la funcionalidad de copiar el texto resultante al portapapeles.',
+			'Proyecto grupal de No-Country, su principal objetivo es conectar los perfiles de profesionales con clientes que necesiten un servicio. Desarrollado con React en el Frontend y Java en el Backend, posee funcionalidades de Login y Registro, visualización de perfiles profesionales, modales con SweetAlert y animaciones con Framer Motion.',
 		imageUrl: project3,
 		imageAlt: 'Project 3 Image',
-		tags: ['HTML 5', 'CSS 3', 'JavaScript'],
+		tags: ['React Js', 'Tailwindcss', 'Redux Toolkit', 'Framer Motion', 'Java'],
 		links: [
 			{
 				title: 'Github',
 				icon: GitHub,
-				href: 'https://github.com/Ronin-21/Proyecto-Alura---Encriptador',
+				href: 'https://github.com/Ronin-21',
 			},
 			{
 				title: 'Ver Demo',
 				icon: Language,
-				href: 'https://ronin-21.github.io/Proyecto-Alura---Encriptador/',
+				href: 'https://youtu.be/3Ngi0qKQg58',
 			},
 		],
 		direction: 'left',

@@ -1,7 +1,4 @@
 import { Paper, Stack, Typography, styled } from '@mui/material';
-import { theme } from '../../../Theme/theme';
-
-const breakpoint = theme.breakpoints.up('md');
 
 const TabContent = ({ data }) => {
 	return (
@@ -52,5 +49,9 @@ const StyledSvg = styled(Paper)`
 	@media (max-width: 600px) {
 		height: 170px;
 		width: 120px;
+
+		& img {
+			filter: none;
+		}
 	}
 `;
