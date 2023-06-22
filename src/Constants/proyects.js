@@ -53,7 +53,7 @@ export const PROYECTS_DATA = [
 			'Proyecto grupal de No-Country, su principal objetivo es conectar los perfiles de profesionales con clientes que necesiten un servicio. Desarrollado con React en el Frontend y Java en el Backend, posee funcionalidades de Login y Registro, visualización de perfiles profesionales, modales con SweetAlert y animaciones con Framer Motion.',
 		imageUrl: project3,
 		imageAlt: 'Project 3 Image',
-		tags: ['React Js', 'Tailwindcss', 'Redux Toolkit', 'Framer Motion', 'Java'],
+		tags: ['React Js', 'Tailwindcss', 'Redux Toolkit', 'Framer Motion'],
 		links: [
 			{
 				title: 'Github',
@@ -71,10 +71,10 @@ export const PROYECTS_DATA = [
 	{
 		title: 'Landing Page Peluqueria',
 		description:
-			'Landing Page para un salón de peluquería hecho con Next Js y Sass para dar estilos.',
+			'Landing Page para un salón de peluquería, donde ofrecen una amplia gama de servicios de belleza capilar. Desarrollada con Next Js, Sass para dar estilos, también posee una integración con la API de Google Maps y formulario de contacto.',
 		imageUrl: project4,
 		imageAlt: 'Project 4 Image',
-		tags: ['React', 'Next Js', 'Sass'],
+		tags: ['React', 'Next Js', 'Sass', 'Goggle Maps API'],
 		links: [
 			{
 				title: 'Github',

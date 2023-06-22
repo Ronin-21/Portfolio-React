@@ -36,13 +36,13 @@ const StyledSvg = styled(Paper)`
 		aspect-ratio: 1/1;
 		width: 100%;
 		object-fit: contain;
-		filter: grayscale(100);
+		filter: saturate(0.5);
 		transition: all 0.2s ease-in;
 	}
 	&:hover {
 		transform: scale(1.05);
 		& img {
-			filter: grayscale(0);
+			filter: saturate(1.5);
 		}
 	}
 

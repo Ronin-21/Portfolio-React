@@ -18,6 +18,7 @@ import corelLogo from '../Assets/svg/CorelDraw-Logo.svg';
 import illustratorLogo from '../Assets/svg/Illustrator-Logo.svg';
 import photoshopLogo from '../Assets/svg/Photoshop-Logo.svg';
 import figmaLogo from '../Assets/svg/figma.svg';
+import nextLogo from '../Assets/svg/next-js.png';
 
 export const TECH_SKILLS = [
 	{
@@ -41,6 +42,16 @@ export const TECH_SKILLS = [
 		description: 'React JS',
 	},
 	{
+		img: nextLogo,
+		alt: 'next',
+		description: 'Next JS',
+	},
+	{
+		img: rnativeLogo,
+		alt: 'react native',
+		description: 'React Native',
+	},
+	{
 		img: gitLogo,
 		alt: 'git',
 		description: 'Git',
@@ -49,16 +60,6 @@ export const TECH_SKILLS = [
 		img: githubLogo,
 		alt: 'github',
 		description: 'Github',
-	},
-	{
-		img: expoLogo,
-		alt: 'expo',
-		description: 'Expo',
-	},
-	{
-		img: rnativeLogo,
-		alt: 'react native',
-		description: 'React Native',
 	},
 ];
 
@@ -102,6 +103,11 @@ export const FRAMEWORKS = [
 		img: bootstrapLogo,
 		alt: 'bootstrap',
 		description: 'Bootstrap',
+	},
+	{
+		img: expoLogo,
+		alt: 'expo',
+		description: 'Expo',
 	},
 ];
 
