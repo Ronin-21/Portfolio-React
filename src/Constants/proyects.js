@@ -1,9 +1,8 @@
 import { Language, GitHub } from '@mui/icons-material';
-import project1 from '../Assets/img/TechLearn.png';
+import project1 from '../Assets/img/TechLearn.webp';
 import project2 from '../Assets/img/Ecommerce1.webp';
-// import project3 from '../Assets/img/Encriptador1.webp';
-import project4 from '../Assets/img/Juego-ahorcado1.webp';
-import project3 from '../Assets/img/MyService.png';
+import project4 from '../Assets/img/PeluqueriaLandingNext.webp';
+import project3 from '../Assets/img/MyService.webp';
 
 export const PROYECTS_DATA = [
 	{
@@ -59,7 +58,7 @@ export const PROYECTS_DATA = [
 			{
 				title: 'Github',
 				icon: GitHub,
-				href: 'https://github.com/Ronin-21',
+				href: 'https://github.com/Ronin-21/My-Service',
 			},
 			{
 				title: 'Ver Demo',
@@ -70,22 +69,22 @@ export const PROYECTS_DATA = [
 		direction: 'left',
 	},
 	{
-		title: 'Juego del Ahorcado',
+		title: 'Landing Page Peluqueria',
 		description:
-			'En el proyecto se utilizó canvas para la horca, la validacion y captura de las teclas al presionarse se hizo con Javascript.Las letras acertadas o erróneas se van mostrando en pantalla y	no pueden repetirse.También posee la función de agregar palabras, comenzar nuevo juego y rendirse.',
+			'Landing Page para un salón de peluquería hecho con Next Js y Sass para dar estilos.',
 		imageUrl: project4,
 		imageAlt: 'Project 4 Image',
-		tags: ['HTML 5', 'CSS 3', 'JavaScript'],
+		tags: ['React', 'Next Js', 'Sass'],
 		links: [
 			{
 				title: 'Github',
 				icon: GitHub,
-				href: 'https://github.com/Ronin-21/Proyecto-Alura---Juego-Ahorcado',
+				href: 'https://github.com/Ronin-21/Landing-Peluqueria',
 			},
 			{
 				title: 'Ver Demo',
 				icon: Language,
-				href: 'https://ronin-21.github.io/Proyecto-Alura---Juego-Ahorcado/',
+				href: 'https://landing-peluqueria.vercel.app/',
 			},
 		],
 		direction: 'right',

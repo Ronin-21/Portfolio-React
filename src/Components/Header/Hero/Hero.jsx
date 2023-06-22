@@ -1,6 +1,6 @@
 import { Box, Stack, Typography, styled } from '@mui/material';
 import { Slide, Zoom } from 'react-awesome-reveal';
-import bannerImg from '../../../Assets/img/Banner.jpg';
+import bannerImg from '../../../Assets/img/Banner.webp';
 import { MyButton } from '../../Common/MyButton';
 import StyledSpan from '../../Common/StyledSpan/StyledSpan.styled';
 
@@ -40,6 +40,7 @@ const StyledHero = styled(Box)`
 	position: relative;
 	background-size: cover;
 	background-image: url(${bannerImg});
+	filter: contrast(1.1);
 	background-position: center;
 	min-height: 100vh;
 	display: flex;
